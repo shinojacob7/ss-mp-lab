@@ -33,6 +33,7 @@ _start:
     je .done
     sub bl, '0'
     imul eax, eax, 10
+    movzx ebx,bl
     add eax, ebx
     inc ecx
     jmp .read
@@ -58,6 +59,7 @@ _start:
     je .done1
     sub bl, '0'
     imul eax, eax, 10
+    movzx ebx,bl
     add eax, ebx
     inc ecx
     jmp .read1
